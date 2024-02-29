@@ -1,17 +1,21 @@
-def int_to_reverse_binary(num1):
+'''
+Name: Jayden Ly
+Lab time: thursday 11:43 am
+'''
+def int_to_reverse_binary(user_input):
     binary_val = ''
 #write your while loop here
-    while num1 > 0:
-        #write your code
-
+    while user_input > 0:
+        moduloed = user_input %2
+        binary_val = binary_val + str(moduloed)
+        user_input = user_input // 2
     return binary_val;
 
 
 def string_reverse(input_string): 
     reverse_input = ''
-    
-   #write your for loop here
-    
+    for i in input_string:
+        reverse_input = input_string [::-1]
     return reverse_input
 
 if __name__ == '__main__':
